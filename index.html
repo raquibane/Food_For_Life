@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feedback.css">
   </head>
   <body class="goto-here">
 		<div class="py-1 bg-primary">
@@ -549,8 +550,21 @@
     </section>
 
     <hr>
+<section class="user-review-section">
+  <p style="text-align: center;">Let Us Know Your valuable Comment...</p>
+  <p style="text-align: center;"><input type="text" placeholder="Name" id="commenterNameID"></p>
+  <p style="text-align: center;"><textarea rows="3" cols="50" placeholder="Comment" id="inputCommentID"></textarea></p>
+  <p style="text-align: center;"><button id="commentSubmitButton" onclick="feedbackSubmit()">Submit</button></p>
+</section>
+<hr>
+<section>
+  <p style="font-size: 22px;">Others Comment...</p>
+  <div id="scrollBarForComment" style="overflow: scroll;height: 300px;">
 
+  </div>
 
+</section>
+<hr>
 		<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
       <div class="container py-4">
         <div class="row d-flex justify-content-center py-5">
@@ -660,5 +674,6 @@
   <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
   <script src = "./js/firebase-config.js"></script>
     <script src = "auth.js"></script>
+    <script src = "comment.js"></script>
   </body>
 </html>
